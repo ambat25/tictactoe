@@ -1,0 +1,140 @@
+
+.container{  
+    width: 80vmin; 
+    height: 80vmin;
+  }
+  
+  body{
+    color: #695F26;
+    background-color: #FFE556;
+    font-family: 'Coiny', cursive;
+  }
+  
+  .cont{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left :0;
+    right: 0;
+  }
+  
+  .main-box{
+    position: relative;
+    width: 100%;  
+    height: 100%;
+    background-color: #F4CF1C;
+    margin-top: 50px;  
+    overflow: hidden;
+    box-shadow: 10px 10px 5px #EACD2F;
+    border-style: dashed;
+    border-width: 3px;
+    margin-bottom: 10px;
+  }
+  
+  .small-box{
+    width: 33.3%;
+    height: 33.3%;
+    border-width: 3px;
+    border-style: solid;
+    background-color: #F4CF1C;
+    text-align: center;
+    font-size: 10vmax;
+    margin: auto;
+    float: left;
+    clear: all; 
+    cursor: pointer;
+  }
+  .checked-btn{
+      cursor: unset;
+      border-color: inherit !important;
+      color: inherit !important;
+  }
+  .Ccentered button:hover {
+     border-width:2px;  
+      border-style:dashed;
+      border-radius: 20px;
+      cursor: pointer;
+      background-color: #FFE556;
+      margin-left: 3px;
+  }
+  
+  button{
+    border : 0px;
+    background-color: inherit;
+  }
+  
+  .choose_player_display,.choose_type_display,.board_display{
+     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    background-color: #F4CF1C;
+  
+    
+  }
+  .choose_player_display{
+    z-index: 4;
+  }
+  .choose_type_display{
+    z-index: 5;
+  }
+  .board_display{ 
+    opacity: 0.9;
+    z-index: 1;
+  }
+  .buttons_display{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+  }
+  .remark{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+  }
+  .Ccentered{
+     font-size: 5vmin;
+    text-align: center;
+    margin-top: 40%;
+    
+  }
+  .Ccentered h2{
+     font-size: 7vmin;
+  }
+  body{
+    height: 100%
+  }
+  .board{
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 1%;
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /*background-color: red;*/
+  }
+  .board span{
+    margin-left: 2px;
+  }
+  .board button{
+    border-width: 2px;
+    border-style: dashed;
+    border-radius: 10px;
+    margin-right: 5px;
+    
+  }
+  .board button:hover{
+    border-color: #F4CF1C;
+    cursor: pointer;
+  }
+  
