@@ -257,8 +257,6 @@ function copyGameBoard() {
 }
 
 function computerAITurn() {
-    // $(".board_display").css("z-index", "4");
-    // $(".remark").text("Computer is thinking");
     if (currentTurn != computerAI) return;
     if (freeCellCount == 0) return;
 
