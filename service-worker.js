@@ -6,18 +6,18 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => {
         return cache.addAll([
-          `${location.origin}/index.html`,
-          `${location.origin}/assets/css/main.css`,
-          `${location.origin}/assets/js/app.js`,
-          `${location.origin}/manifest/manifest.json`,
-          `${location.origin}/manifest/images/icons/icon-72x72.png`,
-          `${location.origin}/manifest/images/icons/icon-96x96.png`,
-          `${location.origin}/manifest/images/icons/icon-128x128.png`,
-          `${location.origin}/manifest/images/icons/icon-144x144.png`,
-          `${location.origin}/manifest/images/icons/icon-152x152.png`,
-          `${location.origin}/manifest/images/icons/icon-192x192.png`,
-          `${location.origin}/manifest/images/icons/icon-384x384.png`,
-          `${location.origin}/manifest/images/icons/icon-512x512.png`,
+          `tictactoe/index.html`,
+          `tictactoe/assets/css/main.css`,
+          `tictactoe/assets/js/app.js`,
+          `tictactoe/manifest/manifest.json`,
+          `tictactoe/manifest/images/icons/icon-72x72.png`,
+          `tictactoe/manifest/images/icons/icon-96x96.png`,
+          `tictactoe/manifest/images/icons/icon-128x128.png`,
+          `tictactoe/manifest/images/icons/icon-144x144.png`,
+          `tictactoe/manifest/images/icons/icon-152x152.png`,
+          `tictactoe/manifest/images/icons/icon-192x192.png`,
+          `tictactoe/manifest/images/icons/icon-384x384.png`,
+          `tictactoe/manifest/images/icons/icon-512x512.png`,
         ])
           .then(() => self.skipWaiting());
       })
