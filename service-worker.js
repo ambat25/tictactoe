@@ -1,4 +1,4 @@
-let cacheName = 'tictactoe-v10
+let cacheName = 'tictactoe-v10'
 self.addEventListener('install', event => {
   // console.log({event});
   event.waitUntil(
