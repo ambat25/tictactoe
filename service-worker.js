@@ -1,22 +1,21 @@
-let cacheName = 'tictactoe-v9';
+let cacheName = 'tictactoe-v10';
 self.addEventListener('install', event => {
-  // console.log({event});
   event.waitUntil(
     caches.open(cacheName)
       .then(cache => {
         return cache.addAll([
-          `${location.origin}/index.html`,
-          `${location.origin}/assets/css/main.css`,
-          `${location.origin}/assets/js/app.js`,
-          `${location.origin}/manifest/manifest.json`,
-          `${location.origin}/manifest/images/icons/icon-72x72.png`,
-          `${location.origin}/manifest/images/icons/icon-96x96.png`,
-          `${location.origin}/manifest/images/icons/icon-128x128.png`,
-          `${location.origin}/manifest/images/icons/icon-144x144.png`,
-          `${location.origin}/manifest/images/icons/icon-152x152.png`,
-          `${location.origin}/manifest/images/icons/icon-192x192.png`,
-          `${location.origin}/manifest/images/icons/icon-384x384.png`,
-          `${location.origin}/manifest/images/icons/icon-512x512.png`,
+          `/index.html`,
+          `/assets/css/main.css`,
+          `/assets/js/app.js`,
+          `/manifest/manifest.json`,
+          `/manifest/images/icons/icon-72x72.png`,
+          `/manifest/images/icons/icon-96x96.png`,
+          `/manifest/images/icons/icon-128x128.png`,
+          `/manifest/images/icons/icon-144x144.png`,
+          `/manifest/images/icons/icon-152x152.png`,
+          `/manifest/images/icons/icon-192x192.png`,
+          `/manifest/images/icons/icon-384x384.png`,
+          `/manifest/images/icons/icon-512x512.png`,
         ])
           .then(() => self.skipWaiting());
       })
